@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dilip.c6tv">
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/c6logoorginal"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/c6logoorginal"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.dilip.c6tv.LiveTV"></activity>
+        <activity android:name="com.dilip.c6tv.Videos" />
+        <activity
+            android:name="com.dilip.c6tv.Youtube"
+            android:label="@string/title_activity_youtube"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.dilip.c6tv.Web" />
+        <activity android:name="com.dilip.c6tv.Home" />
+        <activity android:name="com.dilip.c6tv.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
