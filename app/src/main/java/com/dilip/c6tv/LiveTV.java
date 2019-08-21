@@ -10,14 +10,14 @@ import android.webkit.WebView;
 
 
 public class LiveTV extends AppCompatActivity {
-
+//frameborder=0 scrolling=no align=middle width=1920 height=1080
     WebView views;
     String html="<iframe src='http://www.ssh101.com/securelive/index.php?id=c6tv' width=1920 height=1080></iframe>";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_live_tv);
-        views= (WebView) findViewById(R.id.webViews);
+        views= (WebView)findViewById(R.id.webViews);
         views.getSettings().setJavaScriptEnabled(true);
         views.loadData(html, "text/html", null);
 

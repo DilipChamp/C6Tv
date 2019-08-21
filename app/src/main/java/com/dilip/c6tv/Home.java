@@ -50,7 +50,7 @@ public class Home extends AppCompatActivity {
         share.setType("text/plain");
         share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
         share.putExtra(Intent.EXTRA_SUBJECT,"C6TV Channel App");
-        share.putExtra(Intent.EXTRA_TEXT,"c6tv.in@gmail.com");
+        share.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/?id=com.dilip.c6tv");
         startActivity(Intent.createChooser(share,"Share link!"));
     }
 
