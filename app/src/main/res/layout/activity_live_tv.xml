@@ -5,8 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LiveTV">
-<VideoView
-    android:id="@+id/VideoView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    <WebView
+        android:id="@+id/webViews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
 </android.support.constraint.ConstraintLayout>
